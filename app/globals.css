@@ -6,6 +6,27 @@
   box-sizing: border-box;
 }
 
+
+@layer base {
+  .newscard-title{
+    word-wrap: break-word;
+  }
+  input:focus{
+    outline: none;
+  }
+  .placeholder-black{
+    color: #000;
+  }
+
+  .placeholder-black::placeholder {
+      color: #000;
+      opacity: 1; 
+  }
+    
+  .placeholder-black::-ms-input-placeholder { 
+      color: #000;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
